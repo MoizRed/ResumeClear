@@ -4,6 +4,7 @@ import { Pacifico } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/layout/NavBar";
 
+{/* INIT FONTS */}
 const inter = Inter({
   subsets : ["latin"],
   variable:"--font-inter"
@@ -11,6 +12,8 @@ const inter = Inter({
 })
 
 
+
+{/* METADATA */}
 export const metadata = {
   title: "ResumeClear | AI Resume Builder & CV Optimizer",
   description:
@@ -36,15 +39,15 @@ export const metadata = {
 
   //TODO : FIX THE FAVICON PATH
    icons: {
-    icon: "../../public/favicon.ico", // for browser tabs
-    shortcut: "../../public/favicon.ico",
+    icon: "/favicon.ico", // for browser tabs
+    shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png", // for iOS home screen
   },
 
 };
 
 
-
+{/* ROOT LAYOUT */}
 export default function RootLayout({
   children,
 }: Readonly<{
