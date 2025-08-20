@@ -4,7 +4,7 @@ import Image from "next/image"
 {/** TODO : - ADD Mobile RESPONSIVE DESIGN TO THE NAV
             - Make navbar transparent
             - fill the hrefs
-  
+            - Drop down menus
 */}
 
 export default function NavBar(){
@@ -37,14 +37,14 @@ export default function NavBar(){
   />
 </div>
 
-   {/* NAV  | TODO : Drop down menus */}
+   {/* NAV  */}
 
     <ul className="flex items-center">
 
       {/* DROP DOWN */}
       <li ><a className="flex items-center  text-center px-4 text-gray-500" href="">Resume Templates <ChevronDownIcon/></a></li> 
       <li  ><a className="flex items-center text-center px-4  text-gray-500" href="">Cover Letter<ChevronDownIcon/></a></li>
-      <li  ><a className="flex items-center  text-center px-4  text-gray-500" href="">Solutions<ChevronDownIcon/></a> </li>
+      
 
       {/* INFO */}
       <li><a className="px-4  " href="">Pricing</a></li>
@@ -54,10 +54,10 @@ export default function NavBar(){
      <li> <SeparatorBar/> </li>
 
       {/* CTA */}
-      <div className="flex items-center px-3">
+      <ul className="flex items-center px-3">
         <li> <a  className="flex px-6 text-center text-[#41DE7C]" href="" > Sign in </a></li>
-       <li> <a className="flex px-4 text-center bg-[#41DE7C] rounded-sm  text-white p-2 font-extrabold" href="" > Create my Resume </a> </li> 
-      </div>
+       <li> <a className="flex px-4 text-center bg-[#41DE7C]  rounded-sm  text-[var(--brand)] p-2 font-extrabold" href="" > Create my Resume </a> </li> 
+      </ul>
     </ul> 
     
 

@@ -15,7 +15,7 @@ const inter = Inter({
 
 {/* METADATA */}
 export const metadata = {
-  title: "ResumeClear | AI Resume Builder & CV Optimizer",
+  title: "ResumeClear : AI Resume Builder & CV Optimizer",
   description:
     "ResumeClear is an AI-powered resume builder that refines, formats, and optimizes CVs into recruiter-ready documents. Upload your PDF & stand out.",
     keywords: [
@@ -37,7 +37,7 @@ export const metadata = {
     canonical: "https://resumeclear.com",
   },
 
-  //TODO : FIX THE FAVICON PATH
+  
    icons: {
     icon: "/favicon.ico", // for browser tabs
     shortcut: "/favicon.ico",

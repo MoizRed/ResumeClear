@@ -5,3 +5,8 @@ body {
   background-Color : #F6FAFF;
   color : #3B3B3B;
 }
+
+:root{
+
+  --brand : #F6FAFF;
+}
