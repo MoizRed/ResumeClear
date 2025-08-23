@@ -2,12 +2,15 @@
 import Image from "next/image"
 
 {/** TODO : - ADD Mobile RESPONSIVE DESIGN TO THE NAV
-            - Make navbar transparent
+           - Drop down menus
             - fill the hrefs
-            - Drop down menus
+           
 */}
 
 export default function NavBar(){
+
+
+
 
   const ChevronDownIcon = ()=>(
       <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 ml-2 `} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -23,17 +26,17 @@ export default function NavBar(){
 
     return(
 
-<div className="flex items-center justify-between p-6 ">
+<div className="flex items-center justify-between p-6 sticky top-0 z-50 backdrop-blur-2xl">
 
 
   {/* LOGO */}
-<div className="flex items-center">
+<div className="flex items-center ">
   <Image
     src="/ResumeClear.svg"
     alt="ResumeClear"
     width={180}
     height={200}
-    className="cursor-pointer"
+    className="cursor-pointer hover:brightness-105" // NOTE/TODO : LOGO COLORS MIGHT NEED TO BE CORRECTED
   />
 </div>
 
@@ -55,7 +58,7 @@ export default function NavBar(){
 
       {/* CTA */}
       <ul className="flex items-center px-3">
-        <li> <a  className="flex px-6 text-center text-[#41DE7C]" href="" > Sign in </a></li>
+        <li> <a  className="flex px-6 text-center text-[#41DE7C]" href="" > Sign in </a></li> {/* TODO : fix text variable of global css */}
        <li> <a className="flex px-4 text-center bg-[#41DE7C]  rounded-sm  text-[var(--brand)] p-2 font-extrabold" href="" > Create my Resume </a> </li> 
       </ul>
     </ul> 
